@@ -1,5 +1,8 @@
 @extends('plantilla')
 
+@section('titulo')
+    <title>Soft-Foresta ERP | Producción</title>
+@stop
 @section('contenido')
     <br>
     <br>
@@ -18,7 +21,9 @@
                             <div class="card-body-icon">
                                 <i class="fa fa-fw fa-tree"></i>
                             </div>
-                            <div class="mr-5"><a href="{{'silvicultura'}}" class="nav-link text-light">Silvicultura</a></div>
+                            <div class="mr-5">
+                                <a href="{{'silvicultura'}}" class="nav-link text-light">Silvicultura</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -29,7 +34,9 @@
                             <div class="card-body-icon">
                                 <i class="fa fa-fw fa-refresh"></i>
                             </div>
-                            <div class="mr-5"><a href="{{'explotacion'}}" class="nav-link text-light">Explotación</a></div>
+                            <div class="mr-5">
+                                <a href="{{'explotacion'}}" class="nav-link text-light">Explotación</a>
+                            </div>
                         </div>
                     </div>
                 </div>

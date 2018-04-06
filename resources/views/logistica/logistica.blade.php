@@ -1,5 +1,8 @@
 @extends('plantilla')
 
+@section('titulo')
+    <title>Soft-Foresta ERP | Logística y Transporte</title>
+@stop
 @section('contenido')
     <br>
     <br>

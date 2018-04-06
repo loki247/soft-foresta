@@ -1,5 +1,8 @@
 @extends('plantilla')
 
+@section('titulo')
+    <title>Soft-Foresta ERP | Compras y Servicios</title>
+@stop
 @section('contenido')
     <br>
     <br>
@@ -18,7 +21,9 @@
                         <div class="card-body-icon">
                             <i class="fa fa-fw fa-money"></i>
                         </div>
-                        <div class="mr-5"><a href="#" class="nav-link text-light">Compras</a></div>
+                        <div class="mr-5">
+                            <a href="#" class="nav-link text-light">Compras</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,7 +34,9 @@
                         <div class="card-body-icon">
                             <i class="fa fa-fw fa-adn"></i>
                         </div>
-                        <div class="mr-5"><a href="#" class="nav-link text-light">Materias Primas</a></div>
+                        <div class="mr-5">
+                            <a href="#" class="nav-link text-light">Materias Primas</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,7 +47,9 @@
                         <div class="card-body-icon">
                             <i class="fa fa-fw fa-tree"></i>
                         </div>
-                        <div class="mr-5"><a href="#" class="nav-link text-light">Servicios</a></div>
+                        <div class="mr-5">
+                            <a href="#" class="nav-link text-light">Servicios</a>
+                        </div>
                     </div>
                 </div>
             </div>

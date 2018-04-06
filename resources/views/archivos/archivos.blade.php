@@ -1,5 +1,8 @@
 @extends('plantilla')
 
+@section('titulo')
+    <title>Soft-Foresta ERP | Arhivos</title>
+@stop
 @section('contenido')
     <br>
     <br>
@@ -20,7 +23,9 @@
                     <div class="card-body-icon">
                         <i class="fa fa-fw fa-database"></i>
                     </div>
-                    <div class="mr-5"><a href="#" class="nav-link text-light">Respaldo de datos</a></div>
+                    <div class="mr-5">
+                        <a href="#" class="nav-link text-light">Respaldo de datos</a>
+                    </div>
                 </div>
             </div>
         </div>

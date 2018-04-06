@@ -1,5 +1,8 @@
 @extends('plantilla')
 
+@section('titulo')
+    <title>Soft-Foresta ERP | Contabilidad</title>
+@stop
 @section('contenido')
     <br>
     <br>
@@ -18,7 +21,9 @@
                             <div class="card-body-icon">
                                 <i class="fa fa-fw fa-money"></i>
                             </div>
-                            <div class="mr-5"><a href="#" class="nav-link text-light">Finanzas</a></div>
+                            <div class="mr-5">
+                                <a href="#" class="nav-link text-light">Finanzas</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -29,7 +34,9 @@
                             <div class="card-body-icon">
                                 <i class="fa fa-fw fa-user"></i>
                             </div>
-                            <div class="mr-5"><a href="#" class="nav-link text-light">Recursos Humanos</a></div>
+                            <div class="mr-5">
+                                <a href="#" class="nav-link text-light">Recursos Humanos</a>
+                            </div>
                         </div>
                     </div>
                 </div>

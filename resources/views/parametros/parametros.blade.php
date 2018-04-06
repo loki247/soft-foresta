@@ -1,5 +1,8 @@
 @extends('plantilla')
 
+@section('titulo')
+    <title>Soft-Foresta ERP | Parámetros</title>
+@stop
 @section('contenido')
     <br>
     <br>
@@ -18,7 +21,9 @@
                             <div class="card-body-icon">
                                 <i class="fa fa-fw fa-cloud"></i>
                             </div>
-                            <div class="mr-5"><a href="#" class="nav-link text-light">Suelos y Climas</a></div>
+                            <div class="mr-5">
+                                <a href="#" class="nav-link text-light">Suelos y Climas</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -29,7 +34,9 @@
                             <div class="card-body-icon">
                                 <i class="fa fa-fw fa-tree"></i>
                             </div>
-                            <div class="mr-5"><a href="#" class="nav-link text-light">Especies</a></div>
+                            <div class="mr-5">
+                                <a href="#" class="nav-link text-light">Especies</a>
+                            </div>
                         </div>
                     </div>
                 </div>
