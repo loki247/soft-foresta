@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Predios</title>
+    <title>Soft-Foresta ERP | Empresa</title>
 @stop
 @section('contenido')
     <br>
@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
-                    <h1>Predios</h1>
+                    <h1>Empresa</h1>
                     <br>
                 </div>
 

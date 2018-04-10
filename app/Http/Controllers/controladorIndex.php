@@ -10,37 +10,45 @@ class controladorIndex extends Controller{
 		return view('index');
 	}
 
-	public function archivos(){
-    	return view('archivos/archivos');
+	public function dashboard(){
+    	return view('dashboard/dashboard');
 	}
 
-	public function contabilidad(){
-		return view('contabilidad/contabilidad');
+	public function marketing(){
+		return view('marketing/marketing');
+	}
+
+	public function ventas(){
+		return view('ventas/ventas');
+	}
+
+	public function finanzas(){
+		return view('finanzas/finanzas');
+	}
+
+	public function operaciones(){
+		return view('operaciones/operaciones');
+	}
+
+	public function empresa(){
+		return view('empresa/empresa');
+	}
+
+	public function inventario(){
+		return view('inventario/inventario');
 	}
 
 	public function logistica(){
 		return view('logistica/logistica');
 	}
-
-	public function produccion(){
-		return view('produccion/produccion');
-	}
-
-	public function parametros(){
-		return view('parametros/parametros');
-	}
-
-	public function servicios(){
-		return view('servicios/servicios');
-	}
-
-	public function predios(){
-		return view('predios/predios');
+	public function mantenimiento(){
+		return view('mantenimiento/mantenimiento');
 	}
 
 	public function configuracion(){
 		return view('configuracion/configuracion');
 	}
+
 	public function usuario(){
 		return view('usuario/usuario');
 	}

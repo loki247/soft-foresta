@@ -4,27 +4,26 @@
 //Index
 Route::get('/', ['as' => 'index', 'uses' => 'controladorIndex@index']);
 
-Route::get('archivos', ['as' => 'archivos', 'uses' => 'controladorIndex@archivos']);
+Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'controladorIndex@dashboard']);
 
-Route::get('contabilidad', ['as' => 'contabilidad', 'uses' => 'controladorIndex@contabilidad']);
+Route::get('marketing', ['as' => 'marketing', 'uses' => 'controladorIndex@marketing']);
+
+Route::get('ventas', ['as' => 'ventas', 'uses' => 'controladorIndex@ventas']);
+
+Route::get('finanzas', ['as' => 'finanzas', 'uses' => 'controladorIndex@finanzas']);
+
+Route::get('operaciones', ['as' => 'operaciones', 'uses' => 'controladorIndex@operaciones']);
+
+Route::get('empresa', ['as' => 'empresa', 'uses' => 'controladorIndex@empresa']);
+
+Route::get('inventario', ['as' => 'inventario', 'uses' => 'controladorIndex@inventario']);
 
 Route::get('logistica', ['as' => 'logistica', 'uses' => 'controladorIndex@logistica']);
 
-Route::get('produccion', ['as' => 'produccion', 'uses' => 'controladorIndex@produccion']);
-
-Route::get('parametros', ['as' => 'parametros', 'uses' => 'controladorIndex@parametros']);
-
-Route::get('servicios', ['as' => 'servicios', 'uses' => 'controladorIndex@servicios']);
-
-Route::get('predios', ['as' => 'predios', 'uses' => 'controladorIndex@predios']);
+Route::get('mantenimiento', ['as' => 'mantenimiento', 'uses' => 'controladorIndex@mantenimiento']);
 
 Route::get('configuracion', ['as' => 'configuracion', 'uses' => 'controladorIndex@configuracion']);
 
 Route::get('usuario', ['as' => 'usuario', 'uses' => 'controladorIndex@usuario']);
 
-
-//Producción
-Route::get('silvicultura', ['as' => 'silvicultura', 'uses' => 'controladorProduccion@silvicultura']);
-
-Route::get('explotacion', ['as' => 'explotacion', 'uses' => 'controladorProduccion@explotacion']);
 

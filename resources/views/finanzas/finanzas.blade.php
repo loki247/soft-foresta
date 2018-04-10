@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Producción</title>
+    <title>Soft-Foresta ERP | Finanzas</title>
 @stop
 @section('contenido')
     <br>
@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
-                    <h1>Producción</h1>
+                    <h1>Finanzas</h1>
                     <br>
                 </div>
 
@@ -19,10 +19,10 @@
                     <div class="card text-white bg-primary o-hidden h-100">
                         <div class="card-body">
                             <div class="card-body-icon">
-                                <i class="fa fa-fw fa-tree"></i>
+                                <i class="fa fa-fw fa-money"></i>
                             </div>
                             <div class="mr-5">
-                                <a href="{{'silvicultura'}}" class="nav-link text-light">Silvicultura</a>
+                                <a href="#" class="nav-link text-light">Finanzas</a>
                             </div>
                         </div>
                     </div>
@@ -32,20 +32,19 @@
                     <div class="card text-white bg-primary o-hidden h-100">
                         <div class="card-body">
                             <div class="card-body-icon">
-                                <i class="fa fa-fw fa-refresh"></i>
+                                <i class="fa fa-fw fa-user"></i>
                             </div>
                             <div class="mr-5">
-                                <a href="{{'explotacion'}}" class="nav-link text-light">Explotación</a>
+                                <a href="#" class="nav-link text-light">Recursos Humanos</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
         </div>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
     </div>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fa fa-angle-up"></i>
-    </a>
 @stop

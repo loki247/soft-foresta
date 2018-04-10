@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class controladorArchivos extends Controller
+class controladorInventario extends Controller
 {
     //
 }
