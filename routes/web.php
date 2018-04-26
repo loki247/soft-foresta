@@ -33,6 +33,14 @@ Route::get('configuracion', ['as' => 'configuracion', 'uses' => 'controladorInde
 Route::get('usuario', ['as' => 'usuario', 'uses' => 'controladorIndex@usuario']);
 
 
+//Mantenimiento
+Route::get('mantenimiento/registroMaquinaria', ['as' => 'mantenimiento.registroMaquinaria', 'uses' => 'controladorMantenimiento@registroMaquinaria']);
+
+Route::post('mantenimiento', ['as' => 'mantenimiento.registroGuardado', 'uses' => 'controladorMantenimiento@registroGuardado']);
+
+Route::get('mantenimiento/planMantenimiento', ['as' => 'mantenimiento.planMantenimiento', 'uses' => 'controladorMantenimiento@registroPlanMantenimiento']);
+
+
 
 Auth::routes();
 

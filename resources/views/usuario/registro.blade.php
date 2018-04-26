@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="card card-register mx-auto">
-                    <div class="card-header">Editar datos del usuario</div>
+                    <div class="card-header">Ingresar datos del usuario</div>
                     <div class="card-body">
 
                         <form method="post" action="{{route('usuario.store')}}">
