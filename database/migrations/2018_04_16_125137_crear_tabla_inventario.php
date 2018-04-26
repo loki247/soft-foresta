@@ -25,6 +25,6 @@ class CrearTablaInventario extends Migration {
      * @return void
      */
     public function down(){
-        //
+        Schema::dropIfExists('inventario');
     }
 }

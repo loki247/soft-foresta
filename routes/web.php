@@ -1,5 +1,11 @@
 <?php
 
+//Login y registro
+
+Route::get('usuario/registro', ['as' => 'usuario.registro', 'uses' => 'controladorUsuario@create']);
+
+Route::post('usuario', ['as' => 'usuario.store', 'uses' => 'controladorUsuario@store']);
+
 
 //Index
 Route::get('/', ['as' => 'index', 'uses' => 'controladorIndex@index']);
@@ -27,3 +33,7 @@ Route::get('configuracion', ['as' => 'configuracion', 'uses' => 'controladorInde
 Route::get('usuario', ['as' => 'usuario', 'uses' => 'controladorIndex@usuario']);
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

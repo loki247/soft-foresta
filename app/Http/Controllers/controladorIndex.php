@@ -52,4 +52,8 @@ class controladorIndex extends Controller{
 	public function usuario(){
 		return view('usuario/usuario');
 	}
+
+	public function registroUsuario(){
+		return view('usuario/registro');
+	}
 }

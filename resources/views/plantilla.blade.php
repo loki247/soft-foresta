@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     @yield('titulo')
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/sb-admin.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <a href="{{'usuario'}}" class="nav-link text-light"><i class="fa fa-fw fa-user"></i>Nombre Apellido</a>
+                <a href="{{route('usuario.registro')}}" class="nav-link text-light"><i class="fa fa-fw fa-user"></i>Nombre Apellido</a>
             </li>
 
             <li class="nav-item">
@@ -94,7 +94,7 @@
                 <div class="modal-body">¿Cerrar Sesión?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="login.html">Salir</a>
+                    <a class="btn btn-primary" href="{{'login'}}">Salir</a>
                 </div>
             </div>
         </div>
@@ -111,11 +111,11 @@
 
     </footer>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="js/sb-admin.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
+<script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+<script src="{{asset('vendor/chart.js/Chart.min.js')}}"></script>
+<script src="{{asset('js/sb-admin.min.js')}}"></script>
+<script src="{{asset('js/sb-admin-charts.min.js')}}"></script>
 </body>
 </html>
