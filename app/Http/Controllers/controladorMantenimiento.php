@@ -10,6 +10,10 @@ class controladorMantenimiento extends Controller{
         return view('mantenimiento.registroMaquinaria');
     }
 
+    public function maquinariaRegistrada(){
+        return view('mantenimiento.maquinariaRegistrada');
+    }
+
     public function registroGuardado(Request $request){
         return $request->all();
     }
