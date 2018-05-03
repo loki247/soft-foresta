@@ -21,7 +21,6 @@ class CrearTablaMaquinaria extends Migration
             $table->integer('ano');
             $table->string('seccion');
             $table->integer('horometro');
-            $table->timestamps('fecha_creacion');
         });
     }
 

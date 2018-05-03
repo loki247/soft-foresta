@@ -14,6 +14,43 @@
                     <h1>Logística y Transporte</h1>
                     <br>
                 </div>
+
+                <div class="col-12">
+
+                    <style>
+                        /* Always set the map height explicitly to define the size of the div
+                         * element that contains the map. */
+                        #map {
+                            height: 400px;
+                        }
+
+                    </style>
+
+                    <div id="map"></div>
+                    <script>
+
+                        function initMap() {
+                            var myLatLng = {lat: -38.767683, lng: -72.764586};
+
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 18,
+                                center: myLatLng,
+                                mapTypeId: 'hybrid'
+
+                            });
+
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                title: 'Hello World!'
+                            });
+                        }
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwGYMV0iO0D6IQuqZ9SuhoqhAgJfjhvPA&callback=initMap">
+                    </script>
+
+                </div>
             </div>
         </div>
 

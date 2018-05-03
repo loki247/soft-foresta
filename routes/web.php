@@ -36,6 +36,8 @@ Route::get('usuario', ['as' => 'usuario', 'uses' => 'controladorIndex@usuario'])
 //Mantenimiento
 Route::get('mantenimiento/registroMaquinaria', ['as' => 'mantenimiento.registroMaquinaria', 'uses' => 'controladorMantenimiento@registroMaquinaria']);
 
+Route::post('mantenimiento/registrarMaquinaria', ['as' => 'mantenimiento.registrarMaquinaria', 'uses' => 'controladorMaquinaria@registrarMaquinaria']);
+
 Route::get('mantenimiento/maquinariaRegistrada', ['as' => 'mantenimiento.maquinariaRegistrada', 'uses' => 'controladorMantenimiento@maquinariaRegistrada']);
 
 Route::post('mantenimiento', ['as' => 'mantenimiento.registroGuardado', 'uses' => 'controladorMantenimiento@registroGuardado']);

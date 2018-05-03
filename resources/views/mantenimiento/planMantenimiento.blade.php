@@ -51,7 +51,7 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <label for="horometro">Horometro</label>
+                                        <label for="horometro">Horometro Última Mantención</label>
                                         <input class="form-control" id="horometro" name="horometro" type="text" disabled value="150000">
                                     </div>
                                 </div>
@@ -63,6 +63,15 @@
                                     <div class="col-md-12">
                                         <label for="descripcion">Descripción de la Mantención</label>
                                         <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <label for="horometroActual">Horometro Actual</label>
+                                        <input class="form-control" type="text" name="horometroActual" id="horometroActual">
                                     </div>
                                 </div>
                             </div>

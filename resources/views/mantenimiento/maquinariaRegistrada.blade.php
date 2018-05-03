@@ -15,34 +15,66 @@
                     <br>
 
                     <div class="col-md-12">
-                        <table class="table">
-                            <th>
-                               Nombre Máquina
-                            </th>
+                        <table class="table table-bordered table-hover">
+                            <tr>
+                                <th>
+                                   Nombre Máquina
+                                </th>
 
-                            <th>
-                               Código Interno
-                            </th>
+                                <th>
+                                   Código Interno
+                                </th>
 
-                            <th>
-                               Marca
-                            </th>
+                                <th>
+                                   Marca
+                                </th>
 
-                            <th>
-                                Modelo
-                            </th>
+                                <th>
+                                    Modelo
+                                </th>
 
-                            <th>
-                                Año
-                            </th>
+                                <th>
+                                    Año
+                                </th>
 
-                            <th>
-                                Sección
-                            </th>
+                                <th>
+                                    Sección
+                                </th>
 
-                            <th>
-                                Horas de trabajo
-                            </th>
+                                <th>
+                                    Horas de trabajo
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td>Máquina 1</td>
+                                <td>000001</td>
+                                <td>Marca 1</td>
+                                <td>Modelo 1</td>
+                                <td>2018</td>
+                                <td>Sección 1</td>
+                                <td>10000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Máquina 2</td>
+                                <td>000002</td>
+                                <td>Marca 2</td>
+                                <td>Modelo 2</td>
+                                <td>2018</td>
+                                <td>Sección 2</td>
+                                <td>15000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Máquina 3</td>
+                                <td>000003</td>
+                                <td>Marca 3</td>
+                                <td>Modelo 3</td>
+                                <td>2018</td>
+                                <td>Sección 3</td>
+                                <td>5000</td>
+                            </tr>
                         </table>
                     </div>
                 </div>

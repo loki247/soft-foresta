@@ -19,7 +19,7 @@
                     <div class="card-header">Registras datos de Maquinaria</div>
                     <div class="card-body">
 
-                        <form method="post" action="{{route('mantenimiento.registroGuardado')}}">
+                        <form method="post" action="{{route('mantenimiento.registrarMaquinaria')}}">
                             {{ csrf_field() }}
                             <div class="form-group">
 
