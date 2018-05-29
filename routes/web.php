@@ -44,6 +44,24 @@ Route::post('mantenimiento', ['as' => 'mantenimiento.registroGuardado', 'uses' =
 
 Route::get('mantenimiento/planMantenimiento', ['as' => 'mantenimiento.planMantenimiento', 'uses' => 'controladorMantenimiento@registroPlanMantenimiento']);
 
+Route::get('mantenimiento/protocolos', ['as' => 'mantenimiento.protocolos', 'uses' => 'controladorMantenimiento@protocolos']);
+
+
+//Inventario
+Route::get('inventario/registroInventario', ['as' => 'inventario.registroInventario', 'uses' => 'controladorInventario@registroInventario']);
+
+Route::get('inventario/inventarioRegistrado', ['as' => 'inventario.inventarioRegistrado', 'uses' => 'controladorInventario@inventarioRegistrado']);
+
+
+//Ventas
+Route::get('ventas/cotizaciones', ['as' => 'ventas.cotizaciones', 'uses' => 'controladorVentas@cotizaciones']);
+
+Route::get('ventas/detalleCotizacion', ['as' => 'ventas.detalleCotizacion', 'uses' => 'controladorVentas@detalleCotizacion']);
+
+Route::get('ventas/ordenesVenta', ['as' => 'ventas.ordenesVenta', 'uses' => 'controladorVentas@ordenesVenta']);
+
+Route::get('ventas/detalleVenta', ['as' => 'ventas.detalleVenta', 'uses' => 'controladorVentas@detalleVenta']);
+
 
 
 Auth::routes();

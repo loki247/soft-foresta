@@ -1,7 +1,6 @@
 @extends('plantilla')
-
 @section('titulo')
-    <title>Soft-Foresta ERP | Registro de Maquinaria</title>
+    <title>Soft-Foresta ERP | Registrar Insumo</title>
 @stop
 
 @section('contenido')
@@ -10,14 +9,14 @@
     <div class="content-wrapper">
         <div class="col-md-12">
             <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
-            <h1>Datos de maquinaria</h1>
+            <h1>Datos de Insumos</h1>
         </div>
 
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
                     <div class="col-md-4">
-                        <button id="agregarTr" class="btn btn-success"><i class="fa fa-fw fa-plus"></i>Agregar Máquina</button>
+                        <button id="agregarTr" class="btn btn-success"><i class="fa fa-fw fa-plus"></i>Agregar Insumo</button>
                     </div>
                     <div class="col-md-4"></div>
 
@@ -26,10 +25,10 @@
                 </div>
 
                 <div class="col-md-12">
-                    <form method="post" action="{{route('mantenimiento.registrarMaquinaria')}}">
+                    <form method="post">
                         {{ csrf_field() }}
 
-                        <table class="table table-hover table-bordered" id="tablaMaquinas">
+                        <table class="table table-hover table-bordered" id="tablaInventario">
                             <tr>
                                 <th>
                                     Nombre
@@ -45,18 +44,6 @@
 
                                 <th>
                                     Modelo
-                                </th>
-
-                                <th>
-                                    Año
-                                </th>
-
-                                <th>
-                                    Sección
-                                </th>
-
-                                <th>
-                                    Horometro
                                 </th>
                             </tr>
 
@@ -76,59 +63,27 @@
                                 <td>
                                     <input class="form-control" id="modelo" name="modelo" type="text" aria-describedby="nameHelp" placeholder="Modelo máquina">
                                 </td>
-
-                                <td>
-                                    <select class="form-control" id="seccion" name="seccion">
-                                        <option value="1">Sección 1</option>
-                                        <option value="2">Sección 2</option>
-                                        <option value="3">Sección 3</option>
-                                    </select>
-                                </td>
-
-                                <td>
-                                    <input class="form-control" id="anoMaquina" name="anoMaquina" type="text">
-                                </td>
-
-                                <td>
-                                    <input class="form-control" id="horometro" name="horometro" type="number">
-                                </td>
                             </tr>
 
                             <script type="text/javascript">
                                 $(document).ready(function () {
                                     $("#agregarTr").click(function () {
-                                        $("#tablaMaquinas").append
+                                        $("#tablaInventario").append
                                         ("<tr>"+
                                             '<td>'+
-                                                '<input class="form-control" id="nombreMaquina" name="nombreMaquina" type="text" aria-describedby="nameHelp" placeholder="Nombre Maquina">'+
+                                            '<input class="form-control" id="nombreMaquina" name="nombreMaquina" type="text" aria-describedby="nameHelp" placeholder="Nombre Maquina">'+
                                             '</td>'+
 
                                             '<td>'+
-                                                '<input class="form-control" id="codigoInterno" name="codigoInterno" type="text" aria-describedby="nameHelp" placeholder="xxxxxxxxxxx">'+
+                                            '<input class="form-control" id="codigoInterno" name="codigoInterno" type="text" aria-describedby="nameHelp" placeholder="xxxxxxxxxxx">'+
                                             '</td>'+
 
                                             '<td>'+
-                                                '<input class="form-control" id="marca" name="marca" type="text" aria-describedby="nameHelp" placeholder="Marca Maquina">'+
+                                            '<input class="form-control" id="marca" name="marca" type="text" aria-describedby="nameHelp" placeholder="Marca Maquina">'+
                                             '</td>'+
 
                                             '<td>'+
-                                                '<input class="form-control" id="modelo" name="modelo" type="text" aria-describedby="nameHelp" placeholder="Modelo máquina">'+
-                                            '</td>'+
-
-                                            '<td>'+
-                                                '<select class="form-control" id="seccion" name="seccion">'+
-                                                    '<option value="1">Sección 1</option>'+
-                                                    '<option value="2">Sección 2</option>'+
-                                                    '<option value="3">Sección 3</option>'+
-                                                '</select>'+
-                                            '</td>'+
-
-                                            '<td>'+
-                                                '<input class="form-control" id="anoMaquina" name="anoMaquina" type="text">'+
-                                            '</td>'+
-
-                                            '<td>'+
-                                                '<input class="form-control" id="horometro" name="horometro" type="number">'+
+                                            '<input class="form-control" id="modelo" name="modelo" type="text" aria-describedby="nameHelp" placeholder="Modelo máquina">'+
                                             '</td>');
                                     });
 
@@ -173,12 +128,14 @@
                         </div>
 
                     </form>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
 @stop
-

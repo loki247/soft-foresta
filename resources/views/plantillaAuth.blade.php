@@ -10,6 +10,8 @@
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/sb-admin.css')}}" rel="stylesheet">
+    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+
 </head>
 
 <body>
@@ -39,7 +41,6 @@
 
 </footer>
 
-<script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 <script src="{{asset('vendor/chart.js/Chart.min.js')}}"></script>

@@ -21,4 +21,8 @@ class controladorMantenimiento extends Controller{
     public function registroPlanMantenimiento(){
         return view('mantenimiento.planMantenimiento');
     }
+
+    public function protocolos(){
+        return view('mantenimiento.protocolos');
+    }
 }

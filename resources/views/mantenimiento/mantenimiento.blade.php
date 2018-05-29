@@ -53,6 +53,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-primary o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw fa-product-hunt"></i>
+                        </div>
+                        <div class="mr-5">
+                            <a href="{{route('mantenimiento.protocolos')}}" class="nav-link text-light">Protocolos por Máquina</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 
