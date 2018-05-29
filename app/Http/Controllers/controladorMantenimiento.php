@@ -14,6 +14,10 @@ class controladorMantenimiento extends Controller{
         return view('mantenimiento.maquinariaRegistrada');
     }
 
+    public function editarMaquina(){
+        return view('mantenimiento.editarMaquina');
+    }
+
     public function registroGuardado(Request $request){
         return $request->all();
     }
@@ -24,5 +28,12 @@ class controladorMantenimiento extends Controller{
 
     public function protocolos(){
         return view('mantenimiento.protocolos');
+    }
+
+    public function verProtocolosPorMaquina(){
+        return view('mantenimiento.verProtocolosPorMaquina');
+    }
+    public function generarOrdenDeTrabajo(){
+        return view('mantenimiento.generarOrdenDeTrabajo');
     }
 }

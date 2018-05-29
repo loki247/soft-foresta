@@ -146,7 +146,7 @@
                                 </div>
 
                                 <div class="col-md-3">
-                                    <a class="btn btn-danger text-light" data-toggle="modal"  data-target="#modalCancelar">Cancelar</a>
+                                    <a class="btn btn-danger text-light" data-toggle="modal" data-target="#modalCancelar">Cancelar</a>
                                 </div>
 
                                 <div class="col-md-3"></div>

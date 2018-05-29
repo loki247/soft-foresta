@@ -40,11 +40,17 @@ Route::post('mantenimiento/registrarMaquinaria', ['as' => 'mantenimiento.registr
 
 Route::get('mantenimiento/maquinariaRegistrada', ['as' => 'mantenimiento.maquinariaRegistrada', 'uses' => 'controladorMantenimiento@maquinariaRegistrada']);
 
+Route::get('mantenimiento/editarMaquina', ['as' => 'mantenimiento.editarMaquina', 'uses' => 'controladorMantenimiento@editarMaquina']);
+
 Route::post('mantenimiento', ['as' => 'mantenimiento.registroGuardado', 'uses' => 'controladorMantenimiento@registroGuardado']);
 
 Route::get('mantenimiento/planMantenimiento', ['as' => 'mantenimiento.planMantenimiento', 'uses' => 'controladorMantenimiento@registroPlanMantenimiento']);
 
 Route::get('mantenimiento/protocolos', ['as' => 'mantenimiento.protocolos', 'uses' => 'controladorMantenimiento@protocolos']);
+
+Route::get('mantenimiento/verProtocolosPorMaquina', ['as' => 'mantenimiento.verProtocolosPorMaquina', 'uses' => 'controladorMantenimiento@verProtocolosPorMaquina']);
+
+Route::get('mantenimiento/generarOrdenDeTrabajo', ['as' => 'mantenimiento.generarOrdenDeTrabajo', 'uses' => 'controladorMantenimiento@generarOrdenDeTrabajo']);
 
 
 //Inventario

@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //Orden de Compra
     $('#generarPDFOrden').click(function () {
         var doc = new jsPDF('p', 'pt', 'letter');
         var specialElementHandlers = {
@@ -37,6 +38,7 @@ $(document).ready(function () {
         doc.save('Orden de Compra.pdf');
     });
 
+    //Cotización
     $('#generarPDFCotización').click(function () {
         var doc = new jsPDF('p', 'pt', 'letter');
         var specialElementHandlers = {
@@ -78,5 +80,34 @@ $(document).ready(function () {
             'width': margins.width,
             'elementHandlers': specialElementHandlers});
         doc.save('Cotización.pdf');
+    });
+
+    //Orden de Trabajo
+    $('#generarPDFOrdenDeTrabajo').click(function () {
+        var doc = new jsPDF('p', 'pt', 'letter');
+        var specialElementHandlers = {
+            '#editor': function(element, renderer){
+                return true;
+            },
+            '.controls': function(element, renderer){
+                return true;
+            }
+        };
+
+        var margins = {
+            top:50,
+            bottom: 10,
+            right: 40,
+            left: 60,
+            width: 1000,
+        };
+
+        doc.fromHTML($('#titulo').get(0), 220, 30, {
+            'width': margins.width,
+            'elementHandlers': specialElementHandlers});
+        doc.fromHTML($('#infoGeneral').get(0), margins.left, 50, {
+            'width': margins.width,
+            'elementHandlers': specialElementHandlers});
+        doc.save('Orden de Trabajo.pdf');
     });
 });
