@@ -48,7 +48,7 @@
                             </tr>
 
                             <tr>
-                                <td><a href="{{route('ventas.detalleVenta')}}">OV001</a></td>
+                                <td><a href="{{route('marketingVentas.detalleVenta')}}">OV001</a></td>
                                 <td>Cliente 1</td>
                                 <td>01-06-2018</td>
                                 <td>$500000</td>

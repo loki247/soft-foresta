@@ -38,7 +38,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td><a href="{{route('ventas.detalleCotizacion')}}">COT001</a></td>
+                                    <td><a href="{{route('marketingVentas.detalleCotizacion')}}">COT001</a></td>
                                     <td>Cliente 1</td>
                                     <td>01-06-2018</td>
                                     <td>$500000</td>

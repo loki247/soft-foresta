@@ -22,7 +22,7 @@
 								<i class="fa fa-fw fa-check"></i>
 							</div>
 							<div class="mr-5">
-								<a href="{{route('ventas.cotizaciones')}}" class="nav-link text-light">Cotizaciones</a>
+								<a href="{{route('marketingVentas.cotizaciones')}}" class="nav-link text-light">Cotizaciones</a>
 							</div>
 						</div>
 					</div>
@@ -35,7 +35,7 @@
 								<i class="fa fa-fw fa-money"></i>
 							</div>
 							<div class="mr-5">
-								<a href="{{route('ventas.ordenesVenta')}}" class="nav-link text-light">Ordenes de Venta</a>
+								<a href="{{route('marketingVentas.ordenesVenta')}}" class="nav-link text-light">Ordenes de Venta</a>
 							</div>
 						</div>
 					</div>

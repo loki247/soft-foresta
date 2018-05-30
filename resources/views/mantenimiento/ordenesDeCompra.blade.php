@@ -7,10 +7,13 @@
 @section('contenido')
     <br>
     <br>
+    <script src="{{asset('js/jspdf.min.js')}}"></script>
+    <script src="{{asset('js/generarPDF.js')}}"></script>
     <div class="content-wrapper">
         <div class="col-md-12">
             <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
             <h4>Orden de Compra</h4>
+            <p class="h4" style="display: none" id="titulo">Orden de Compra</p>
         </div>
 
         <div class="container-fluid">
@@ -22,15 +25,15 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <label for="codigoMantencion">Código Orden de Trabajo</label>
-                                    <select class="form-control">
+                                    <select class="form-control" id="codigoMantencion">
                                         <option value="1">OT001</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="col-md-12">
-                                <label for="datosMantencion">Datos de Mantención</label>
-                                <table class="table table-sm" id="datosMantencion">
+                            <div class="col-md-12" id="datosMantencion">
+                                <label>Datos de Mantención</label>
+                                <table class="table table-sm">
                                     <thead class="table-info">
                                         <tr>
                                             <th>Máquina</th>
@@ -128,10 +131,16 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Orden de Trabajo</h5>
-                                        <div class="modal-body">Orden de Compra Registrada</div>
-                                        <div class="modal-footer">
-                                            <a class="btn btn-info text-light" type="button" data-dismiss="modal"><i class="fa fa-fw fa-check"></i>Aceptar</a>
-                                        </div>
+                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Orden de Compra Registrada</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a class="btn btn-info text-light" type="button" data-dismiss="modal"><i class="fa fa-fw fa-check"></i>Aceptar</a>
+                                        <a class="btn btn-info text-light" type="button" data-dismiss="modal" id="generarPDFOrdenDeCompra"><i class="fa fa-fw fa-file-pdf-o"></i>Guardar Documento</a>
                                     </div>
                                 </div>
                             </div>
@@ -155,6 +164,29 @@
                             </div>
                         </div>
                     </form>
+                </div>
+
+                <div class="col-md-12" id="textoRepuestos" style="display: none">
+                    <h5>Repuestos a Solicitar:</h5>
+                    <ul class="list-inline">
+                        <li>Repuesto: Correa alternador</li>
+                        <li>Cantidad: 1</li>
+                        <li>Repuesto: Correa Distribución</li>
+                        <li>Cantidad: 1</li>
+                    </ul>
+                </div>
+
+                <div class="row" style="display: none" id="textoFirmas">
+                    <div class="col-md-6">
+                        <p>Orden generada por <strong>Usuario</strong></p>
+                        <p>Firma de Usuario</p>
+                        <p>_______________________</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Nombre Encargado __________________________</p>
+                        <p>Firma Encargado</p>
+                        <p>_______________________</p>
+                    </div>
                 </div>
             </div>
         </div>

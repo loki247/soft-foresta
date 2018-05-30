@@ -12,9 +12,7 @@ Route::get('/', ['as' => 'index', 'uses' => 'controladorIndex@index']);
 
 Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'controladorIndex@dashboard']);
 
-Route::get('marketing', ['as' => 'marketing', 'uses' => 'controladorIndex@marketing']);
-
-Route::get('ventas', ['as' => 'ventas', 'uses' => 'controladorIndex@ventas']);
+Route::get('marketingVentas', ['as' => 'marketingVentas', 'uses' => 'controladorIndex@marketingVentas']);
 
 Route::get('finanzas', ['as' => 'finanzas', 'uses' => 'controladorIndex@finanzas']);
 
@@ -62,13 +60,13 @@ Route::get('inventario/inventarioRegistrado', ['as' => 'inventario.inventarioReg
 
 
 //Ventas
-Route::get('ventas/cotizaciones', ['as' => 'ventas.cotizaciones', 'uses' => 'controladorVentas@cotizaciones']);
+Route::get('marketingVentas/cotizaciones', ['as' => 'marketingVentas.cotizaciones', 'uses' => 'controladorMarketingVentas@cotizaciones']);
 
-Route::get('ventas/detalleCotizacion', ['as' => 'ventas.detalleCotizacion', 'uses' => 'controladorVentas@detalleCotizacion']);
+Route::get('marketingVentas/detalleCotizacion', ['as' => 'marketingVentas.detalleCotizacion', 'uses' => 'controladorMarketingVentas@detalleCotizacion']);
 
-Route::get('ventas/ordenesVenta', ['as' => 'ventas.ordenesVenta', 'uses' => 'controladorVentas@ordenesVenta']);
+Route::get('marketingVentas/ordenesVenta', ['as' => 'marketingVentas.ordenesVenta', 'uses' => 'controladorMarketingVentas@ordenesVenta']);
 
-Route::get('ventas/detalleVenta', ['as' => 'ventas.detalleVenta', 'uses' => 'controladorVentas@detalleVenta']);
+Route::get('marketingVentas/detalleVenta', ['as' => 'marketingVentas.detalleVenta', 'uses' => 'controladorMarketingVentas@detalleVenta']);
 
 
 

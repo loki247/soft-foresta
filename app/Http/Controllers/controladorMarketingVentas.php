@@ -4,23 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class controladorVentas extends Controller {
+class controladorMarketingVentas extends Controller{
 
     public function cotizaciones(){
-        return view('ventas.cotizaciones');
+        return view('marketingVentas.cotizaciones');
     }
 
     public function detalleCotizacion(Request $request){
         $numCot = $request->get('numCot');
-        return view('ventas.detalleCotizacion');
+        return view('marketingVentas.detalleCotizacion');
     }
 
     public function ordenesVenta(){
-        return view('ventas.ordenesVenta');
+        return view('marketingVentas.ordenesVenta');
     }
 
     public function detalleVenta(){
-        return view('ventas.detalleVenta');
+        return view('marketingVentas.detalleVenta');
     }
-
 }

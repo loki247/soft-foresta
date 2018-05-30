@@ -14,12 +14,8 @@ class controladorIndex extends Controller{
     	return view('dashboard/dashboard');
 	}
 
-	public function marketing(){
-		return view('marketing/marketing');
-	}
-
-	public function ventas(){
-		return view('ventas/ventas');
+	public function marketingVentas(){
+		return view('marketingVentas/marketingVentas');
 	}
 
 	public function finanzas(){
