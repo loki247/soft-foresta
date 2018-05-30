@@ -20,6 +20,7 @@
                         <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
+                                    <th>Código</th>
                                     <th>Tipo Mantención</th>
                                     <th>Sección</th>
                                     <th>Máquina</th>
@@ -35,6 +36,7 @@
 
                             <tbody class=" table-bordered">
                                 <tr>
+                                    <td>P001</td>
                                     <td>Mecánica</td>
                                     <td>Sección 1</td>
                                     <td>Máquina 1</td>
@@ -47,6 +49,7 @@
                                     <td><a class="btn btn-primary text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 </tr>
                                 <tr>
+                                    <td>P002</td>
                                     <td>Mecánica</td>
                                     <td>Sección 1</td>
                                     <td>Máquina 1</td>
@@ -58,6 +61,7 @@
                                     <td>Cambiar Aceite</td>
                                     <td><a class="btn btn-primary text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 <tr>
+                                    <td>P002</td>
                                     <td>Mecánica</td>
                                     <td>Sección 1</td>
                                     <td>Máquina 1</td>

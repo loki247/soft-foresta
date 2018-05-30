@@ -52,6 +52,8 @@ Route::get('mantenimiento/verProtocolosPorMaquina', ['as' => 'mantenimiento.verP
 
 Route::get('mantenimiento/generarOrdenDeTrabajo', ['as' => 'mantenimiento.generarOrdenDeTrabajo', 'uses' => 'controladorMantenimiento@generarOrdenDeTrabajo']);
 
+Route::get('mantenimiento/ordenesDeCompra', ['as' => 'mantenimiento.ordenesDeCompra', 'uses' => 'controladorMantenimiento@ordenesDeCompra']);
+
 
 //Inventario
 Route::get('inventario/registroInventario', ['as' => 'inventario.registroInventario', 'uses' => 'controladorInventario@registroInventario']);

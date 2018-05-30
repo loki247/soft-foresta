@@ -24,12 +24,14 @@
                         <table class="table">
                             <thead class="table-info">
                                 <tr>
+                                    <th>Código</th>
                                     <th>Tipo Mantención</th>
                                 </tr>
                             </thead>
 
                             <tbody class="table-bordered">
                                 <tr>
+                                    <td>P001</td>
                                     <td>Mecánica</td>
                                 </tr>
                             </tbody>
