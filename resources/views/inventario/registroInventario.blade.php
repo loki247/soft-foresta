@@ -8,7 +8,7 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
             <h1>Datos de Insumos</h1>
         </div>
 
@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="container">
                     <div class="col-md-4">
-                        <button id="agregarTr" class="btn btn-success"><i class="fa fa-fw fa-plus"></i>Agregar Insumo</button>
+                        <button id="agregarTr" class="btn btn-info"><i class="fa fa-fw fa-plus"></i>Agregar Insumo</button>
                     </div>
                     <div class="col-md-4"></div>
 

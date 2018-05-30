@@ -8,7 +8,7 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
             <h4>Protocolos por Máquina</h4>
             <a href="{{route('mantenimiento.protocolos')}}" class="btn btn-primary text-light"><i class="fa fa-fw fa-upload"></i>Registro de Protocolo</a>
         </div>
@@ -46,7 +46,7 @@
                                     <td>60 días</td>
                                     <td>1 hora</td>
                                     <td>Cambiar Correas</td>
-                                    <td><a class="btn btn-primary text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
+                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>P002</td>
@@ -88,8 +88,8 @@
                                     </div>
                                     <div class="modal-body">¿Generar Orden de Trabajo?</div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                                        <a class="btn btn-primary" href="{{route('mantenimiento.generarOrdenDeTrabajo')}}">Si</a>
+                                        <button class="btn btn-danger" type="button" data-dismiss="modal">No</button>
+                                        <a class="btn btn-info" href="{{route('mantenimiento.generarOrdenDeTrabajo')}}">Si</a>
                                     </div>
                                 </div>
                             </div>

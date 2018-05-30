@@ -9,7 +9,7 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-primary text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
             <h1>Datos de maquinaria</h1>
         </div>
 
@@ -142,7 +142,7 @@
                                 <div class="col-md-3"></div>
 
                                 <div class="col-md-3">
-                                    <input type="submit" class="btn btn-primary" value="Registrar">
+                                    <input type="submit" class="btn btn-info" value="Registrar">
                                 </div>
 
                                 <div class="col-md-3">
@@ -165,8 +165,8 @@
                                     </div>
                                     <div class="modal-body">¿Cancelar y salir?</div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                                        <a class="btn btn-primary" href="javascript:window.history.back();">Si</a>
+                                        <button class="btn btn-info" type="button" data-dismiss="modal">No</button>
+                                        <a class="btn btn-danger" href="javascript:window.history.back();">Si</a>
                                     </div>
                                 </div>
                             </div>
