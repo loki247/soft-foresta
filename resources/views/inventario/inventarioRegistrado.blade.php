@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Maquinaria Registrada</title>
+    <title>Soft-Foresta ERP | Inventario Registrado</title>
 @stop
 @section('contenido')
     <br>
@@ -42,21 +42,21 @@
 
                             <tbody class="table-bordered">
                                 <tr>
-                                    <td>Insumo 1</td>
+                                    <td><a href="{{route('inventario.detalleInsumo')}}">Insumo 1</a></td>
                                     <td>000001</td>
                                     <td>Marca 1</td>
                                     <td>Modelo 1</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Insumo 2</td>
+                                    <td><a href="#">Insumo 2</a></td>
                                     <td>000002</td>
                                     <td>Marca 2</td>
                                     <td>Modelo 2</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Insumo 3</td>
+                                    <td><a href="#">Insumo 3</a></td>
                                     <td>000003</td>
                                     <td>Marca 3</td>
                                     <td>Modelo 3</td>

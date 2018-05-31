@@ -59,7 +59,7 @@
                                     <td>90 días</td>
                                     <td>1 hora</td>
                                     <td>Cambiar Aceite</td>
-                                    <td><a class="btn btn-primary text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
+                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 <tr>
                                     <td>P002</td>
                                     <td>Mecánica</td>
@@ -71,7 +71,7 @@
                                     <td>90 días</td>
                                     <td>45 minutos</td>
                                     <td>Cambiar Filtros</td>
-                                    <td><a class="btn btn-primary text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
+                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>

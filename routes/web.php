@@ -50,6 +50,8 @@ Route::get('mantenimiento/verProtocolosPorMaquina', ['as' => 'mantenimiento.verP
 
 Route::get('mantenimiento/generarOrdenDeTrabajo', ['as' => 'mantenimiento.generarOrdenDeTrabajo', 'uses' => 'controladorMantenimiento@generarOrdenDeTrabajo']);
 
+Route::get('mantenimiento/ordenesDeTrabajo', ['as' => 'mantenimiento.ordenesDeTrabajo', 'uses' => 'controladorMantenimiento@ordenesDeTrabajo']);
+
 Route::get('mantenimiento/ordenesDeCompra', ['as' => 'mantenimiento.ordenesDeCompra', 'uses' => 'controladorMantenimiento@ordenesDeCompra']);
 
 
@@ -57,6 +59,8 @@ Route::get('mantenimiento/ordenesDeCompra', ['as' => 'mantenimiento.ordenesDeCom
 Route::get('inventario/registroInventario', ['as' => 'inventario.registroInventario', 'uses' => 'controladorInventario@registroInventario']);
 
 Route::get('inventario/inventarioRegistrado', ['as' => 'inventario.inventarioRegistrado', 'uses' => 'controladorInventario@inventarioRegistrado']);
+
+Route::get('inventario/detalleInsumo', ['as' => 'inventario.detalleInsumo', 'uses' => 'controladorInventario@detalleInsumo']);
 
 
 //Ventas

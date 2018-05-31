@@ -13,4 +13,8 @@ class controladorInventario extends Controller{
     public function inventarioRegistrado(){
         return view('inventario.inventarioRegistrado');
     }
+
+    public function detalleInsumo(){
+        return view('inventario.detalleInsumo');
+    }
 }

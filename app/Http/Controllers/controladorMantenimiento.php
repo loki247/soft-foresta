@@ -38,6 +38,10 @@ class controladorMantenimiento extends Controller{
         return view('mantenimiento.generarOrdenDeTrabajo');
     }
 
+    public function ordenesDeTrabajo(){
+        return view('mantenimiento.ordenesDeTrabajo');
+    }
+
     public function ordenesDeCompra(){
         return view('mantenimiento.ordenesDeCompra');
     }

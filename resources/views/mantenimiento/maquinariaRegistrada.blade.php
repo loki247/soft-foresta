@@ -10,7 +10,7 @@
         <div class="col-md-12">
             <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
             <h1>Maquinaria Registrada</h1>
-            <a href="{{route('mantenimiento.registroMaquinaria')}}" class="btn btn-primary text-light"><i class="fa fa-fw fa-upload"></i>Registro de Maquinaria</a>
+            <a href="{{route('mantenimiento.registroMaquinaria')}}" class="btn btn-info text-light"><i class="fa fa-fw fa-upload"></i>Registro de Maquinaria</a>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -39,33 +39,14 @@
                         <table class="table">
                             <thead class="table-info">
                                 <tr>
-                                    <th>
-                                        Nombre Máquina
-                                    </th>
-
-                                    <th>
-                                       Código Interno
-                                    </th>
-
-                                    <th>
-                                       Marca
-                                    </th>
-
-                                    <th>
-                                        Modelo
-                                    </th>
-
-                                    <th>
-                                        Año
-                                    </th>
-
-                                    <th>
-                                        Sección
-                                    </th>
-
-                                    <th>
-                                        Horas de trabajo
-                                    </th>
+                                    <th>Nombre Máquina</th>
+                                    <th>Código Interno</th>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>Año</th>
+                                    <th>Sección</th>
+                                    <th>Horas de trabajo</th>
+                                    <th></th>
                                 </tr>
                             </thead>
 
@@ -78,6 +59,7 @@
                                     <td>2018</td>
                                     <td>Sección 1</td>
                                     <td>10000</td>
+                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i></a></td>
                                 </tr>
 
                                 <tr>
@@ -88,6 +70,7 @@
                                     <td>2018</td>
                                     <td>Sección 2</td>
                                     <td>15000</td>
+                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i></a></td>
                                 </tr>
 
                                 <tr>
@@ -98,6 +81,7 @@
                                     <td>2018</td>
                                     <td>Sección 3</td>
                                     <td>5000</td>
+                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
