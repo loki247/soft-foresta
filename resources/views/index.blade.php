@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-  <title>Soft-Foresta ERP | Módulos</title>
+  <title>ERP | Módulos</title>
 @stop
 @section('contenido')
   <br>

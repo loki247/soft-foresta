@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Plan de Matenimiento</title>
+    <title>ERP | Plan de Matenimiento</title>
 @stop
 
 @section('contenido')
@@ -9,7 +9,11 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('mantenimiento')}}">Mantenimiento</a></li>
+                <li class="breadcrumb-item">Plan de Mantención</li>
+            </ol>
             <h1>Plan de Matenimiento</h1>
         </div>
 

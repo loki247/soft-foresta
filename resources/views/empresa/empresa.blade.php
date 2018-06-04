@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Empresa</title>
+    <title>ERP | Empresa</title>
 @stop
 @section('contenido')
     <br>
@@ -10,7 +10,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                        <li class="breadcrumb-item">Empresa</li>
+                    </ol>
                     <h1>Empresa</h1>
                     <br>
                 </div>

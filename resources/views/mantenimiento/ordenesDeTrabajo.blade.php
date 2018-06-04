@@ -8,7 +8,11 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('mantenimiento')}}">Mantenimiento</a></li>
+                <li class="breadcrumb-item">Ordenes de Trabajo</li>
+            </ol>
             <h4>Protocolos por Máquina</h4>
         </div>
 

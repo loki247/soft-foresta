@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Detalle Insumo</title>
+    <title>ERP | Detalle Insumo</title>
 @stop
 @section('contenido')
     <br>
@@ -10,7 +10,11 @@
     <script src="{{asset('js/generarPDF.js')}}"></script>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('inventario')}}">Inventario</a></li>
+                <li class="breadcrumb-item">Detalle Insumo</li>
+            </ol>
             <h4>Detalle Insumo</h4>
             <br>
         </div>

@@ -1,7 +1,7 @@
 @extends('plantillaAuth')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Registro de usuario</title>
+    <title>ERP | Registro de usuario</title>
 @stop
 
 @section('contenido')
@@ -9,7 +9,11 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Usuario</a></li>
+                <li class="breadcrumb-item">Registro Usuario</li>
+            </ol>
             <h1>Datos del Usuario</h1>
         </div>
 

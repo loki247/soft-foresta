@@ -1,15 +1,19 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>ERP | Protocolos por Máquina</title>
+    <title>ERP | Protocolos de Mantención</title>
 @stop
 @section('contenido')
     <br>
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
-            <h4>Protocolos por Máquina</h4>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('mantenimiento')}}">Mantenimiento</a></li>
+                <li class="breadcrumb-item">Protocolos de Mantención</li>
+            </ol>
+            <h4>Protocolos de Mantención</h4>
             <a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info text-light"><i class="fa fa-fw fa-upload"></i>Registro de Protocolo</a>
         </div>
         <br>
@@ -38,7 +42,7 @@
                                     <td>Máquina 1</td>
                                     <td>Revisión Correas</td>
                                     <td>1 hora</td>
-                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
+                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo" title="Generar Orden de Trabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>P002</td>
@@ -47,7 +51,7 @@
                                     <td>Máquina 1</td>
                                     <td>Cambio de aceite</td>
                                     <td>1 hora</td>
-                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
+                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo" title="Generar Orden de Trabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 <tr>
                                     <td>P003</td>
                                     <td>Mecánica</td>
@@ -55,7 +59,7 @@
                                     <td>Máquina 1</td>
                                     <td>Cambio de filtros</td>
                                     <td>45 minutos</td>
-                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo"><i class="fa fa-fw fa-file"></i></a></td>
+                                    <td><a class="btn btn-info text-light" data-toggle="modal" data-target="#modalOrdenDeTrabajo" title="Generar Orden de Trabajo"><i class="fa fa-fw fa-file"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>

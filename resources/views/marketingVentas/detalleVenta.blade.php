@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Detalle Venta</title>
+    <title>ERP | Detalle Venta</title>
 @stop
 @section('contenido')
     <br>
@@ -10,7 +10,12 @@
     <script src="{{asset('js/generarPDF.js')}}"></script>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('marketingVentas')}}">Marketing y Ventas</a></li>
+                <li class="breadcrumb-item"><a href="{{route('marketingVentas.ordenesVenta')}}">Ordenes de Venta</a></li>
+                <li class="breadcrumb-item">Detalle Venta</li>
+            </ol>
             <button id="generarPDFOrden" class="btn btn-info text-light"><i class="fa fa-fw fa-file-pdf-o"></i>Exportar PDF</button>
             <h4>Detalle Venta</h4>
             <p class="h4" style="display: none" id="titulo">Orden de Compra</p>

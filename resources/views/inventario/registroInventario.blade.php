@@ -1,6 +1,6 @@
 @extends('plantilla')
 @section('titulo')
-    <title>Soft-Foresta ERP | Registrar Insumo</title>
+    <title>ERP | Registrar Insumo</title>
 @stop
 
 @section('contenido')
@@ -8,7 +8,11 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('inventario')}}">Inventario</a></li>
+                <li class="breadcrumb-item">Registrar Insumo</li>
+            </ol>
             <h1>Datos de Insumos</h1>
         </div>
 

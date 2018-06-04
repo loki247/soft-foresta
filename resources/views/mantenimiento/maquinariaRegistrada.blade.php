@@ -1,14 +1,18 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Maquinaria Registrada</title>
+    <title>ERP | Maquinaria Registrada</title>
 @stop
 @section('contenido')
     <br>
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('mantenimiento')}}">Mantenimiento</a></li>
+                <li class="breadcrumb-item">Maquinaria Registrada</li>
+            </ol>
             <h1>Maquinaria Registrada</h1>
             <a href="{{route('mantenimiento.registroMaquinaria')}}" class="btn btn-info text-light"><i class="fa fa-fw fa-upload"></i>Registro de Maquinaria</a>
         </div>

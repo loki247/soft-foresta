@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('titulo')
-    <title>Soft-Foresta ERP | Protocolos por Máquina</title>
+    <title>ERP | Protocolos por Máquina</title>
 @stop
 
 @section('contenido')
@@ -9,7 +9,12 @@
     <br>
     <div class="content-wrapper">
         <div class="col-md-12">
-            <a class="btn btn-info text-light" href="javascript:window.history.back();"><i class="fa fa-fw fa-arrow-left"></i>Volver</a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" ><a href="{{'/'}}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{{route('mantenimiento')}}">Mantenimiento</a></li>
+                <li class="breadcrumb-item"><a href="{{route('mantenimiento.verProtocolosPorMaquina')}}">Protocolos por Máquina</a></li>
+                <li class="breadcrumb-item">Registro Protocolo</li>
+            </ol>
             <h1>Protocolos por Máquina</h1>
         </div>
 
@@ -63,7 +68,6 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <label class="h3">Tareas a realizar</label>
-                                    <a class="btn btn-info text-light" id="agregarTarea"><i class="fa fa-fw fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
