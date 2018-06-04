@@ -57,7 +57,6 @@
                                 </div>
                             </div>
 
-
                             <div class="form-group">
                                 <div class="form-row">
                                     <div class="col-md-12">
@@ -103,7 +102,11 @@
                                                 <span aria-hidden="true">×</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body">¿Cancelar y salir?</div>
+
+                                        <div class="modal-body">
+                                            <p>¿Cancelar y salir?</p>
+                                        </div>
+
                                         <div class="modal-footer">
                                             <button class="btn btn-info" type="button" data-dismiss="modal">No</button>
                                             <a class="btn btn-danger" href="javascript:window.history.back();">Si</a>

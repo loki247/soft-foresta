@@ -59,7 +59,9 @@
                                     <td>2018</td>
                                     <td>Sección 1</td>
                                     <td>10000</td>
-                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i></a></td>
+                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i><i class="fa fa-fw fa-clock-o"></i></a>
+                                        <a href="{{route('mantenimiento.planMantenimiento')}}" class="btn btn-danger" title="Ingresar Mantención Correctiva"><i class="fa fa-fw fa-wrench"></i><i class="fa fa-fw fa-exclamation"></i></a>
+                                    </td>
                                 </tr>
 
                                 <tr>
@@ -70,7 +72,9 @@
                                     <td>2018</td>
                                     <td>Sección 2</td>
                                     <td>15000</td>
-                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i></a></td>
+                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i><i class="fa fa-fw fa-clock-o"></i></a>
+                                        <a href="{{route('mantenimiento.planMantenimiento')}}" class="btn btn-danger" title="Ingresar Mantención Correctiva"><i class="fa fa-fw fa-wrench"></i><i class="fa fa-fw fa-exclamation"></i></a>
+                                    </td>
                                 </tr>
 
                                 <tr>
@@ -81,7 +85,9 @@
                                     <td>2018</td>
                                     <td>Sección 3</td>
                                     <td>5000</td>
-                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i></a></td>
+                                    <td><a href="{{route('mantenimiento.protocolos')}}" class="btn btn-info" title="Crear Protocolo de Mantención"><i class="fa fa-fw fa-wrench"></i><i class="fa fa-fw fa-clock-o"></i></a>
+                                        <a href="{{route('mantenimiento.planMantenimiento')}}" class="btn btn-danger" title="Ingresar Mantención Correctiva"><i class="fa fa-fw fa-wrench"></i><i class="fa fa-fw fa-exclamation"></i></a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

@@ -19,9 +19,9 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="container" id="infoGeneral">
-                    <div class="col-md-12">
-                        <table class="table">
+                <div class="container">
+                    <div class="col-md-12" id="infoGeneral">
+                        <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
                                     <th>Código</th>
@@ -38,8 +38,8 @@
                         </table>
                     </div>
 
-                    <div class="col-md-12">
-                        <table class="table">
+                    <div class="col-md-12" id="infoSeccion">
+                        <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
                                     <th>Sección</th>
@@ -57,8 +57,8 @@
                         </table>
                     </div>
 
-                    <div class="col-md-12">
-                        <table class="table">
+                    <div class="col-md-12" id="infoTareas">
+                        <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
                                     <th>Tarea a Realizar</th>
@@ -74,8 +74,8 @@
                         </table>
                     </div>
 
-                    <div class="col-md-12">
-                        <table class="table">
+                    <div class="col-md-12" id="infoMantencion">
+                        <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
                                     <th>Fecha Mantención</th>
@@ -91,8 +91,8 @@
                         </table>
                     </div>
 
-                    <div class="col-md-12">
-                        <table class="table">
+                    <div class="col-md-12" id="infoDuracion">
+                        <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
                                     <th>Duración</th>
@@ -106,8 +106,8 @@
                         </table>
                     </div>
 
-                    <div class="col-md-12">
-                        <table class="table">
+                    <div class="col-md-12" id="observaciones">
+                        <table class="table table-sm">
                             <thead class="table-info">
                                 <tr>
                                     <th>Observaciones</th>
@@ -121,7 +121,7 @@
                         </table>
                     </div>
 
-                    <div class="row" style="display: none">
+                    <div class="row" style="display: none" id="firmas">
                         <div class="col-md-6">
                             <p>Orden generada por <strong>Usuario</strong></p>
                             <p>Firma de Usuario</p>
